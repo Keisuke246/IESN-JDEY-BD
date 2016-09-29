@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ClassLibrary1
 {
-    class Customer
+    public class Customer
     {
         public double AccountBalance { get; set; }
         public string AdressLine1 { get; set; }
