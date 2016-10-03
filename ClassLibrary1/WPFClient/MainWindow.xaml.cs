@@ -1,5 +1,4 @@
 ﻿using ClassLibrary1;
-//using Model;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -33,17 +32,7 @@ namespace WPFClient
         void MainWindow_Loaded(object sender, RoutedEventArgs e)
         {
             _context.Database.Initialize(true);
-            _customer = new Customer()
-            {
-                AccountBalance = 742.84,
-                AdressLine1 = "Rue des Prés, 47",
-                City = "Namur",
-                Country = "Belgium",
-                EMail = "bertrand.duchene@gmail.com",
-                Id = 75849,
-                Name = "Bertrand Duchêne",
-                PostCode = "5000"
-            };
+            _customer = _context.Customers.First<Customer>;
             _context.Customers.Add(_customer);
             _context.SaveChanges();
             Formulaire.DataContext = _customer;
