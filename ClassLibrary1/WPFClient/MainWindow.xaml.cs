@@ -32,7 +32,7 @@ namespace WPFClient
         void MainWindow_Loaded(object sender, RoutedEventArgs e)
         {
             _context.Database.Initialize(true);
-            _customer = _context.Customers.First<Customer>;
+            _customer = _context.Customers.First<Customer>();
             _context.Customers.Add(_customer);
             _context.SaveChanges();
             Formulaire.DataContext = _customer;
