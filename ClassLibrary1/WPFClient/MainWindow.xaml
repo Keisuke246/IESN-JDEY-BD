@@ -32,7 +32,7 @@
             <TextBlock Grid.Row="1" Grid.Column="0" Text="Nom"></TextBlock>
             <TextBlock Grid.Row="1" Grid.Column="1" Text="{Binding Name}"></TextBlock>
             <TextBlock Grid.Row="2" Grid.Column="0" Text="Adresse"></TextBlock>
-            <TextBlock Grid.Row="2" Grid.Column="1" Text="{Binding AddressLine1}"></TextBlock>
+            <TextBlock Grid.Row="2" Grid.Column="1" Text="{Binding AdressLine1}"></TextBlock>
             <TextBlock Grid.Row="3" Grid.Column="0" Text="Code postal"></TextBlock>
             <TextBlock Grid.Row="3" Grid.Column="1" Text="{Binding PostCode}"></TextBlock>
             <TextBlock Grid.Row="4" Grid.Column="0" Text="Ville"></TextBlock>

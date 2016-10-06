@@ -33,14 +33,13 @@ namespace WPFClient
         {
             _context.Database.Initialize(true);
             _customer = _context.Customers.First<Customer>();
-            _context.Customers.Add(_customer);
-            _context.SaveChanges();
             Formulaire.DataContext = _customer;
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            throw new NotImplementedException("Voir énoncé");
+            _context.Customers.First<Customer>().AccountBalance += (double)MontantAAjouterAuCompte.Value;
+            _context.SaveChanges();
         }
     }
 }
