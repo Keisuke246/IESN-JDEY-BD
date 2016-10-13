@@ -20,6 +20,7 @@ namespace BankApi.Controllers
         // GET: api/Customers
         public IQueryable<Customer> GetCustomers()
         {
+            db.Customers.Include(a => a.Accounts).ToList();
             return db.Customers;
         }
 

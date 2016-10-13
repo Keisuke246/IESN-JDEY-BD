@@ -32,7 +32,7 @@ namespace BankApi.Controllers
         // PUT api/values/5
         public void Put(int id, [FromBody]string value)
         {
-            values[id] = value;
+            values.Add(value);
         }
 
         // DELETE api/values/5
